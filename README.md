@@ -1,15 +1,14 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
+ Hugo Pre-Interview Development Task Repo:
  ----------------------------------------------------------------- 
+This repo contains a simple Python 3 script that takes 1 argument, a cryptocurrency name and 
+fetches the necessary information from the CoinMarket API. See below for usage information.
 
+**Usage Information:**
 
-Hi there! Welcome to AWS Cloud9!
+Build Command: docker build -t hugo ./
+Run Command: docker run hugo "cryptocurrency"
+Example: docker run hugo "bitcoin"
+Example Output: USD Price: 7251.00982002
+                USD Market Cap: 125055084686.71143
 
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
-
+ 
