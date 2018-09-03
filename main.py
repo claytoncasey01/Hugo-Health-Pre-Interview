@@ -2,6 +2,7 @@ import urllib.parse
 import urllib.request
 import json
 import sys
+import os
 
 # Parse in list of coin names to sybmol json file. 
 with open('coins.json') as f:
@@ -17,7 +18,7 @@ else:
 try:
     symbol = coin_list[coin]
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?symbol={}'.format(symbol)
-    headers = { 'X-CMC_PRO_API_KEY': '309c0f36-b920-41eb-a34e-37a0fecb5c62' }
+    headers = { 'X-CMC_PRO_API_KEY': os.environ['API_KEY'] }
 
     # make a request to CoinMarket
     req = urllib.request.Request(url, None, headers)
